@@ -17,8 +17,8 @@ import warnings
 warnings.filterwarnings('ignore')
 
 
-data = pd.read_csv(io.BytesIO(uploaded['housing_data.csv']))
-data
+data = pd.read_csv('BostonHousing.csv')
+data.head()
 
 data.isnull().sum()
 
