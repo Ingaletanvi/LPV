@@ -54,7 +54,7 @@ test_loss, test_accuracy = model.evaluate(x_test, y_test)
 print(f"\nTest Accuracy: {test_accuracy:.4f}")
 print(f"Test Loss: {test_loss:.4f}")
 
-
+predictions = model.predict(x_test)
 
 plt.figure(figsize=(15, 5))
 for i in range(10):
