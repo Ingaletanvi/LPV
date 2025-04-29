@@ -45,15 +45,23 @@ void avg_reduction(vector<int>&arr){
     cout<< "Sum is "<<(double)sum/arr.size()<<endl;
 }
 int main() {
-  vector<int> arr;
-  arr.push_back(5);
-  arr.push_back(2);
-  arr.push_back(9);
+    vector<int> arr;
+    int n;
 
+    cout << "Enter number of elements: ";
+    cin >> n;
 
-  min_reduction(arr);
-  max_reduction(arr);
-  sum_reduction(arr);
-  avg_reduction(arr);
-  
+    cout << "Enter " << n << " elements:\n";
+    for (int i = 0; i < n; i++) {
+        int value;
+        cin >> value;
+        arr.push_back(value);
+    }
+
+    min_reduction(arr);
+    max_reduction(arr);
+    sum_reduction(arr);
+    average_reduction(arr);
+
+    return 0;
 }
