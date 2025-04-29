@@ -112,3 +112,8 @@ int main() {
 
     return 0;
 }
+
+
+
+g++ -fopenmp your_file.cpp -o your_program
+./your_program  
